@@ -1,0 +1,55 @@
+.header {
+  height: 60px;
+  width: 100%;
+  font-size: 12px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  &-block {
+    height: 100%;
+    width: calc(100vw - 40px);
+    background: #1D1E1F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+
+    &-reserve {
+      color: white;
+    }
+    &-logo {
+      height: 31px;
+      width: 149px;
+      background: url("/assets/static/logo-header.svg") center /cover no-repeat;
+      left: 50%;
+      margin-left: -75px;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+      &-sound {
+        display: flex;
+        align-items: center;
+        &-icon {
+          height: 16px;
+          width: 48px;
+          background: url("/assets/static/sound-header.svg") center /cover no-repeat;
+        }
+        &-title {
+          color: white;
+          margin-left: 10px;
+        }
+      }
+    }
+    &-icon {
+      color: white;
+      margin-left: 60px;
+    }
+  }
+}
+
